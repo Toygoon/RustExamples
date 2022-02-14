@@ -1,0 +1,7 @@
+# For ignoring generated binaries
+# Ignore all
+*
+# Unignore all with extensions
+!*.*
+# Unignore all directories
+!*/
