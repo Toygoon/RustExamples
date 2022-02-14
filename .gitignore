@@ -5,3 +5,6 @@
 !*.*
 # Unignore all directories
 !*/
+
+# Ignore built folders
+target/
