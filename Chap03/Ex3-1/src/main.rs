@@ -1,7 +1,11 @@
 fn main() {
-    let mut x = 5;
-    println!("x = {}", x);
+    let x = 5;
 
-    x = 6;
+    // Shadowed
+    let x = x + 1;
+
+    // Shadowed
+    let x = x * 2;
+
     println!("x = {}", x);
 }
