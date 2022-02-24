@@ -1,11 +1,13 @@
 fn main() {
-    let x = 5;
+    let x: (i32, f64, u8) = (500, 6.4, 1);
 
-    // Shadowed
-    let x = x + 1;
+    let five_hundred = x.0;
 
-    // Shadowed
-    let x = x * 2;
+    let six_point_four = x.1;
 
-    println!("x = {}", x);
+    let one = x.2;
+
+    println!("five_hundred = {}", five_hundred);
+    println!("six_point_four = {}", six_point_four);
+    println!("one = {}", one);
 }
