@@ -1,8 +1,7 @@
 fn main() {
-    let x = 5;
+    let mut x = 5;
     println!("x = {}", x);
 
-    // Error, not mutable variables
-    // x = 6;
-
+    x = 6;
+    println!("x = {}", x);
 }
