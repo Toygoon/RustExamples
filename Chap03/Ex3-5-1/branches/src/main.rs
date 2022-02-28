@@ -1,5 +1,12 @@
+use std::io;
+
 fn main() {
-    let number = 6;
+    println!("Input the number.");
+    
+    let mut number = String::new();
+    io::stdin().read_line(&mut number).expect("Invalid input.");
+
+    let number: i32 = number.trim().parse().expect("Invalid input");
 
     if number % 4 == 0 {
         println!("The number is divided into 4.");
