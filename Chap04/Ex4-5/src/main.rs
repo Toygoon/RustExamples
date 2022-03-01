@@ -20,6 +20,8 @@ fn main() {
     println!("Length of '{}' is {}", s1, len);
 }
 
+// & operator : Variables can be read, but not be granted ownership. It's a reference
 fn calculate_length(s: &String) -> usize {
     s.len()
+    // Variable s is dropping of the range, but nothing happens becuase there's not any ownership
 }
