@@ -4,4 +4,8 @@ fn main() {
     for element in a.iter() {
         println!("value = {}", element);
     }
+
+    for number in (1..4).rev() {
+        println!("value = {}", number);
+    }
 }
